@@ -1,0 +1,10 @@
+# Keep secrets and local build output out of the image (COPY . . would otherwise bake .env.local in).
+node_modules
+dist
+coverage
+.git
+.env
+.env.*
+!.env.example
+*.log
+.playwright-mcp
